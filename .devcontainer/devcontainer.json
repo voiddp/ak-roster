@@ -1,0 +1,13 @@
+{
+  "name": "ak-roster-dev",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "forwardPorts": [3000],
+  // 1. Install deps
+  // 2. Force submodules to init + fetch latest commits from origin
+  "postCreateCommand": "yarn install && git submodule update --init --recursive --force --remote",
+
+  // Every start, refresh submodules again
+  "postStartCommand": "git submodule sync --recursive && git submodule update --init --recursive --force --remote && git fetch --all"
+}
