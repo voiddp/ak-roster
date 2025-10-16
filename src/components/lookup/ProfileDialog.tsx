@@ -23,6 +23,8 @@ import ShareDialog from "./ShareDialog";
 import { enqueueSnackbar } from "notistack";
 import imageBase from "util/imageBase";
 import getContrastText from "util/fns/getContrastText";
+import AccountStatistic from "./AccountStatistic";
+import AccountStatistic from "./AccountStatistic";
 
 interface Props extends DialogProps {
   data?: LookupData;
@@ -154,6 +156,8 @@ const ProfileDialog = (props: Props) => {
         >
           {data && (
             <>
+              {/* Compute statistics for profile (rendered later) */}
+              <AccountStatistic data={data} />
               <Typography
                 component="h1"
                 sx={{
@@ -292,6 +296,8 @@ const ProfileDialog = (props: Props) => {
                   </Box>
                 </Box>
               )}
+              {/* Stats computation placeholder; JSX mapping will follow in next task */}
+              <AccountStatistic data={data} />
             </>
           )}
         </ThemeProvider>
