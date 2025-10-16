@@ -53,7 +53,7 @@ function isOperatorVisible(opData: OperatorData, isCn: boolean): boolean {
 const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data }) => {
   const { roster, account } = data;
   const isCn = (account.server ?? "").toLowerCase() === "cn";
-
+  
   const stats = React.useMemo<StatsData>(() => {
     // Initialize stats structure with zeroes
     const s: StatsData = {
@@ -214,6 +214,8 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
 
     return s;
   }, [roster, isCn]);
+
+  console.log(stats);
 
   // Keep this component side-effect free for now; we'll render later
   // Reference stats so lints don't flag it as unused.

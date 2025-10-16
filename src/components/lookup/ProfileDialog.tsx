@@ -24,7 +24,6 @@ import { enqueueSnackbar } from "notistack";
 import imageBase from "util/imageBase";
 import getContrastText from "util/fns/getContrastText";
 import AccountStatistic from "./AccountStatistic";
-import AccountStatistic from "./AccountStatistic";
 
 interface Props extends DialogProps {
   data?: LookupData;
