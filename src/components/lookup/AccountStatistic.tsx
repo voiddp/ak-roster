@@ -39,7 +39,6 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
   const stats = React.useMemo<StatsData>(() => {
     // Initialize stats structure with zeroes
     const s: StatsData = {
-      operators: { entries: { 0: { have: createArray(6), total: createArray(6) } }, have: 0, total: 0 },
       rarity: { entries: { 0: { have: createArray(6), total: createArray(6) } }, have: 0, total: 0 },
       elite1: { entries: { 0: { have: createArray(6), total: createArray(6) } }, have: 0, total: 0 },
       elite2: { entries: { 0: { have: createArray(6), total: createArray(6) } }, have: 0, total: 0 },
@@ -95,12 +94,10 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
       const rarityIndex = Math.max(0, Math.min(5, (opData.rarity ?? 1) - 1)); // 1-6 -> 0-5
 
       // Operators (counts by rarity)
-      s.operators.entries[0].total![rarityIndex] += 1;
-      s.rarity.entries[0].total![rarityIndex] += 1; // keep separate as requested
+      s.rarity.entries[0].total![rarityIndex] += 1;
 
       const owned = !!roster[opId];
       if (owned) {
-        s.operators.entries[0].have[rarityIndex] += 1;
         s.rarity.entries[0].have[rarityIndex] += 1;
       }
 
@@ -202,7 +199,6 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
       s[key].total = totalSum;
     };
 
-    finalizeKey("operators");
     finalizeKey("rarity");
     finalizeKey("elite1");
     finalizeKey("elite2");
