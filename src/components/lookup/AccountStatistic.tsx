@@ -30,21 +30,18 @@ function incrementStats(
   key: keyof StatsData,
   entryKey: number,
   index: number,
-  value: number,
-  incrementTotal = false
+  value: number
 ) {
   const entry = stats[key].entries[entryKey];
   entry.have[index] += value;
-  if (incrementTotal && entry.total) {
+  if (entry.total) {
     entry.total[index] += value;
   }
   
   // If this is the main entry (key 0), also increment top-level totals
   if (entryKey === 0) {
     stats[key].have += value;
-    if (incrementTotal) {
-      stats[key].total += value;
-    }
+    stats[key].total += value;
   }
 }
 
@@ -115,7 +112,7 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
       const rarityIndex = Math.max(0, Math.min(5, (opData.rarity ?? 1) - 1)); // 1-6 -> 0-5
 
       // Operators (counts by rarity)
-      incrementStats(s, "rarity", 0, rarityIndex, 1, true);
+      incrementStats(s, "rarity", 0, rarityIndex, 1);
 
       const owned = !!roster[opId];
       if (owned) {
@@ -124,14 +121,14 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
 
       // Potential (sum of potential slots vs owned potential levels)
       const totalPotentialSlots = opData.potentials?.length ?? 0;
-      incrementStats(s, "potential", 0, rarityIndex, totalPotentialSlots, true);
+      incrementStats(s, "potential", 0, rarityIndex, totalPotentialSlots);
       if (owned) incrementStats(s, "potential", 0, rarityIndex, roster[opId]!.potential ?? 0);
 
       // Elite1 & Elite2 availability vs owned state
       const hasE1 = !!opData.eliteLevels?.some((e) => e.eliteLevel >= 1);
       const hasE2 = !!opData.eliteLevels?.some((e) => e.eliteLevel >= 2);
-      if (hasE1) incrementStats(s, "elite1", 0, rarityIndex, 1, true);
-      if (hasE2) incrementStats(s, "elite2", 0, rarityIndex, 1, true);
+      if (hasE1) incrementStats(s, "elite1", 0, rarityIndex, 1);
+      if (hasE2) incrementStats(s, "elite2", 0, rarityIndex, 1);
       if (owned) {
         const elite = roster[opId]!.elite ?? 0;
         if (elite >= 1) incrementStats(s, "elite1", 0, rarityIndex, 1);
@@ -141,7 +138,7 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
       // Level count: count operators with max levels
       const maxPromotion = MAX_PROMOTION_BY_RARITY[opData.rarity];
       const maxLevel = MAX_LEVEL_BY_RARITY[opData.rarity][maxPromotion];
-      incrementStats(s, "level", 0, rarityIndex, 1, true); // Total operators that can reach max level
+      incrementStats(s, "level", 0, rarityIndex, 1); // Total operators that can reach max level
       if (owned) {
         const op = roster[opId]!;
         const isMaxLevel = op.elite === maxPromotion && op.level === maxLevel;
@@ -152,7 +149,7 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
 
       // Masteries totals (how many mastery steps exist on this operator)
       const masteryGoals = (opData.skillData ?? []).flatMap((sd) => sd.masteries ?? []);
-      incrementStats(s, "masteries", 0, rarityIndex, masteryGoals.length, true);
+      incrementStats(s, "masteries", 0, rarityIndex, masteryGoals.length);
 
       // Modules totals (how many module stages exist on this operator)
       const moduleStages = (opData.moduleData ?? []).reduce((acc, m) => {
@@ -160,7 +157,7 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
         if (!isCn && m.isCnOnly) return acc;
         return acc + (m.stages?.length ?? 0);
       }, 0);
-      incrementStats(s, "modules", 0, rarityIndex, moduleStages, true);
+      incrementStats(s, "modules", 0, rarityIndex, moduleStages);
 
       // Owned-only breakdowns
       if (owned) {
@@ -214,21 +211,6 @@ const AccountStatistic: React.FC<{ data: NonNullable<LookupData> }> = ({ data })
       }
     }
 
-    // Finalize operator-based breakdowns that don't have key 0 entries
-    const finalizeOperatorKey = (key: "masteryOperators" | "moduleOperators") => {
-      const entries = s[key].entries;
-      let haveSum = 0;
-      for (const entry of Object.values(entries)) {
-        for (let i = 0; i < entry.have.length; i++) {
-          haveSum += entry.have[i];
-        }
-      }
-      s[key].have = haveSum;
-      s[key].total = 0; // totals not defined for these buckets
-    };
-
-    finalizeOperatorKey("masteryOperators");
-    finalizeOperatorKey("moduleOperators");
 
     return s;
   }, [roster, isCn]);
