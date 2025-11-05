@@ -1,14 +1,17 @@
-import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import supabase from "supabase/supabaseClient";
 import AccountData, { AccountDataInsert } from "types/auth/accountData";
 import { enqueueSnackbar } from "notistack";
 import randomName from "util/fns/randomName";
 import handlePostgrestError from "util/fns/handlePostgrestError";
+import { useQueryFactory } from "util/hooks/useQueryFactory";
+import { useCallback } from "react";
 
-async function fetchAccount(): Promise<AccountData | null> {
+async function fetchAccount(): Promise<AccountData | undefined> {
   const { data: { session } } = await supabase.auth.getSession();
   const user_id = session?.user.id;
-  if (!user_id) return null;
+  if (!user_id) throw new Error("No user session");
+
+  console.log("fetching account");
 
   const { data, error } = await supabase
     .from("krooster_accounts")
@@ -16,7 +19,10 @@ async function fetchAccount(): Promise<AccountData | null> {
     .eq("user_id", user_id)
     .limit(1)
     .single();
-  handlePostgrestError(error);
+  if (error) {
+    handlePostgrestError(error);
+    throw error;
+  }
   // If user record missing or empty username → create one
   if (!data || (!data.username && !error)) {
     const genName = randomName();
@@ -44,19 +50,25 @@ async function fetchAccount(): Promise<AccountData | null> {
 }
 
 function useAccount() {
-  const queryClient = useQueryClient();
 
-  const { data: account, isLoading } = useQuery({
+  const {
+    data: account,
+    isLoading,
+    getCurrentData,
+    useOptimisticMutation,
+  } = useQueryFactory<AccountData | undefined>({
     queryKey: ["account"],
-    queryFn: fetchAccount,
-    staleTime: 1000 * 60 * 60 * 24, // 1 day
-    gcTime: 1000 * 60 * 60 * 24, // 1 day
-    retry: false,
+    fetchFn: fetchAccount,
   });
 
-  const updateAccount = useMutation({
+  const updateAccount = useOptimisticMutation<AccountDataInsert, void>({
+    optimisticUpdate: {
+      updateFn: (currentAccount: AccountData | undefined, newData: AccountDataInsert) => {
+        return currentAccount ? { ...currentAccount, ...newData } as AccountData : undefined;
+      },
+    },
     mutationFn: async (accountData: AccountDataInsert) => {
-      const previous = queryClient.getQueryData<AccountData>(["account"])
+      const previous = getCurrentData()
       const merged = { ...previous, ...accountData };
       const { user_id, ...rest } = merged;
       if (!user_id) throw new Error("Missing user_id");
@@ -65,40 +77,20 @@ function useAccount() {
         .from("krooster_accounts")
         .update({ ...rest })
         .eq("user_id", user_id);
-      handlePostgrestError(error);
-    },
-
-    //Optimistically update cache before request
-    onMutate: async (newData) => {
-      await queryClient.cancelQueries({ queryKey: ["account"] });
-      const previousAccount = queryClient.getQueryData<AccountData>(["account"]);
-
-      queryClient.setQueryData<AccountData>(["account"], (old) => ({
-        ...old,
-        ...newData,
-      }) as AccountData);
-
-      return { previousAccount };
-    },
-
-    //Update error > return to previous state + message
-    onError: (err, newData, context) => {
-      if (context?.previousAccount) {
-        queryClient.setQueryData(["account"], context.previousAccount);
-      }
-      enqueueSnackbar({
-        message: "Failed to save account changes.",
-        variant: "error",
-      });
-    },
-
-    //Invalidate cache after success/failure
-    onSettled: () => {
-      queryClient.invalidateQueries({ queryKey: ["account"] });
+      if (error) throw error;
     },
   });
 
-  return [account, updateAccount.mutateAsync, { loading: isLoading }] as const;
+  //convert props
+  const _updateAccount = useCallback(
+    (accountData: AccountDataInsert) => {
+      updateAccount.mutate(accountData);
+    },
+    [updateAccount]
+  );
+
+
+  return [account, _updateAccount, { loading: isLoading }] as const;
 }
 
 export default useAccount;

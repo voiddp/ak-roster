@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback } from "react";
 import { Operator, OperatorV2 } from "types/operators/operator";
 import operatorJson from "data/operators";
 import useLocalStorage from "./useLocalStorage";
@@ -7,82 +7,130 @@ import supabase from "supabase/supabaseClient";
 import handlePostgrestError from "util/fns/handlePostgrestError";
 import { repair } from "util/fns/convertLegacyOperator";
 import { enqueueSnackbar } from "notistack";
+import { useQueryFactory } from "util/hooks/useQueryFactory";
 
 function useOperators() {
-  const [operators, setOperators] = useLocalStorage<Roster>("v3_roster", {});
+  const [localOperators, setLocalOperators, lastFetchedAt] = useLocalStorage<Roster>("v3_roster", {});
   const [legacyOperators, setLegacyOperators] = useLocalStorage<null | Record<string, OperatorV2>>("operators", null);
 
-  // change operator, push to db
-  const onChange = useCallback(
-    (op: Operator) => {
-      setOperators(({ ..._roster }) => {
-        // assign if owned, otherwise delete
-        if (op.potential) {
-          _roster[op.op_id] = op;
-          supabase
-            .from("operators")
-            .upsert(op)
-            .then(({ error }) => handlePostgrestError(error));
-        } else {
-          delete _roster[op.op_id];
-          supabase
-            .from("operators")
-            .delete()
-            .eq("op_id", op.op_id)
-            .then(({ error }) => handlePostgrestError(error));
-        }
-        return _roster;
-      });
+  const {
+    data: queryOperators,
+    useOptimisticMutation,
+  } = useQueryFactory<Roster>({
+    queryKey: ["operators"],
+    queryOptions: {
+      initialData: localOperators,
+      initialDataUpdatedAt: new Date(lastFetchedAt ?? 0).getTime(),
     },
-    [setOperators]
-  );
-
-  const hydrated = useRef(false);
-  // fetch data from db
-  useEffect(() => {
-    let isCanceled = false;
-    if (hydrated.current) return;
-
-    const fetchData = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
+    fetchFn: useCallback(async (): Promise<Roster> => {
+      const { data: { session } } = await supabase.auth.getSession();
       const user_id = session?.user.id;
+      if (!user_id) throw new Error("No user session");
 
-      if (!user_id) return;
-
-      const { data: dbOperators, error } = await supabase.from("operators").select().match({ user_id });
-      if (error) handlePostgrestError(error);
+      const { data: dbOperators, error } = await supabase.from("operators").select().eq("user_id", user_id);
+      if (error) {
+        handlePostgrestError(error);
+        throw error;
+      }
 
       let _roster: Roster = {};
-      if (dbOperators?.length)
-        dbOperators.forEach((op) => {
+
+      if (dbOperators?.length) {
+        dbOperators.forEach(({ user_id, ...op }) => { //remove user_id from LS
           if (op.op_id in operatorJson) _roster[op.op_id] = { ...op } as Operator;
         });
-      else if (!Object.keys(operators).length && legacyOperators) {
+      } else if (!Object.keys(localOperators).length && legacyOperators) {
         enqueueSnackbar("Loading cached roster data...", { variant: "info" });
         _roster = repair(legacyOperators);
 
         const { error } = await supabase.from("operators").insert(Object.values(_roster));
-        if (error) handlePostgrestError(error);
-        else {
+        if (error) {
+          handlePostgrestError(error);
+        } else {
           enqueueSnackbar("Finished loading data.", { variant: "success" });
           setLegacyOperators(null);
           localStorage.removeItem("operators");
         }
       }
+      //local storage & update timestamp
+      console.log("fetchOperators called");
+      setLocalOperators(_roster, new Date().toISOString());
 
-      hydrated.current = true;
-      if (!isCanceled) setOperators(_roster);
-    };
+      return _roster;
+    }, [localOperators, legacyOperators, setLegacyOperators, setLocalOperators])
+  });
 
-    fetchData();
+  const updateOperator = useOptimisticMutation<Operator, void>({
+    optimisticUpdate: {
+      updateFn: (currentRoster: Roster, op: Operator) => {
+        const newRoster = { ...currentRoster };
 
-    return () => {
-      isCanceled = true;
-    };
-  }, []);
+        if (op.potential) {
+          newRoster[op.op_id] = op;
+        } else {
+          delete newRoster[op.op_id];
+        }
 
-  return [operators, onChange] as const;
+        setLocalOperators(newRoster, null);
+        return newRoster;
+      },
+    },
+    mutationFn: async (op: Operator) => {
+      const { data: { session } } = await supabase.auth.getSession();
+      const user_id = session?.user.id;
+      if (!user_id) return;
+
+      if (op.potential) {
+        const { error } = await supabase.from("operators").upsert(op).eq("user_id", user_id);
+        if (error) throw error;
+      } else {
+        const { error } = await supabase.from("operators").delete().eq("user_id", user_id).eq("op_id", op.op_id);
+        if (error) throw error;
+      }
+    },
+  });
+
+  //upsert or delete whole roster
+  const updateRoster = useOptimisticMutation<Operator[], void>({
+    optimisticUpdate: {
+      updateFn: (currentRoster: Roster, operators: Operator[]) => {
+        const roster: Roster = {};
+        operators.forEach((op)=> roster[op.op_id] = op);
+        
+        setLocalOperators(roster, null);
+        return roster;
+      },
+    },
+    mutationFn: async (operators: Operator[]) => {
+      const { data: { session } } = await supabase.auth.getSession();
+      const user_id = session?.user.id;
+      if (!user_id) return;
+
+      if (operators.length > 0) {
+        const { error } = await supabase.from("operators").upsert(operators).eq("user_id", user_id);
+        if (error) throw error;
+      } else {
+        const { error } = await supabase.from("operators").delete().eq("user_id", user_id);
+        if (error) throw error;
+      }
+    }
+  });
+
+  //convert props
+  const onChange = useCallback(
+    (op: Operator) => {
+      updateOperator.mutate(op);
+    },
+    [updateOperator]
+  );
+
+  const putOperators = useCallback(
+    (operators: Operator[]) => {
+      updateRoster.mutate(operators);
+    },
+    [updateRoster]
+  );
+
+  return [queryOperators || localOperators, onChange, putOperators] as const;
 }
 export default useOperators;

@@ -50,7 +50,7 @@ const GameImport = memo(() => {
   const [hasToken, setHasToken] = useState(localStorage.getItem("token_new") != null);
   const [rememberLogin, setRememberLogin] = useState(localStorage.getItem("token_new") != null);
 
-  const [_roster] = useOperators();
+  const [_roster, , putOperators] = useOperators();
   const { goals, updateGoals } = useGoals();
 
   const [user, setAccount] = useAccount();
@@ -127,7 +127,7 @@ const GameImport = memo(() => {
         tag: profileData.nickNumber,
       };
       const d = new Date(profileData.registerTs * 1000);
-      await setAccount({
+      setAccount({
         user_id: user!.user_id,
         private: user!.private,
         friendcode: friendCode,
@@ -138,9 +138,9 @@ const GameImport = memo(() => {
       });
 
       //Update support data
-      await removeSupport(0);
-      await removeSupport(1);
-      await removeSupport(2);
+      removeSupport(0);
+      removeSupport(1);
+      removeSupport(2);
       const supportsData = userData.social.assistCharList;
 
       for (let i = 0; i < supportsData.length; i++) {
@@ -155,7 +155,7 @@ const GameImport = memo(() => {
           op_id: charName,
           slot: i,
         };
-        await setSupport(support);
+        setSupport(support);
       }
     }
 
@@ -241,14 +241,14 @@ const GameImport = memo(() => {
           operators.push(operator);
         }
       }
-      await supabase.from("operators").upsert(operators);
+      putOperators(operators);
 
       if (settings.refreshGoals) {
         const _goals = goals.map((g) => {
           const op = operators.find((o) => o.op_id === g.op_id);
           return op ? changeGoal(g, op) : g;
         });
-        await updateGoals(_goals);
+        updateGoals(_goals);
       }
     }
 
@@ -264,7 +264,7 @@ const GameImport = memo(() => {
         }
       }
       depotData.push({ material_id: "4001", stock: userData.status.gold });
-      await setDepot(depotData, true);
+      setDepot(depotData, true);
     }
     enqueueSnackbar("Data imported.", { variant: "success" });
   }

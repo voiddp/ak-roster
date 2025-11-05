@@ -708,6 +708,9 @@ const PlannerGoals = (props: Props) => {
       const op = roster[g.op_id] ?? null;
       return op ? changeGoal(g, op) : g;
     });
+    if (_.isEqual(_goals, goals)) {
+      return;
+    }
     updateGoals(_goals);
   }, [goals, roster, updateGoals, setAnchorEl]
   );

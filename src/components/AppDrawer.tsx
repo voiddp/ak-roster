@@ -79,7 +79,7 @@ const AppDrawer = React.memo((props: Props) => {
   const { title: currentTab, pages, requireLogin: r1 } = tabs[tab];
   const { title: currentPage, requireLogin: r2 } = pages[page];
 
-  const [account] = useAccount();
+  const [account, , { loading }] = useAccount();
   useTemporaryProfileUrl(account?.username);
 
   const drawerContent = (
@@ -157,8 +157,8 @@ const AppDrawer = React.memo((props: Props) => {
               },
             }}
           >
-            <Link href="/login">Log In</Link>
-            <Link href="/register">Register</Link>
+            <Link href="/login" disabled={loading}>Log In</Link>
+            <Link href="/register" disabled={loading}>Register</Link>
           </Box>
         )}
         {account && <AccountWidget username={account.username} />}
