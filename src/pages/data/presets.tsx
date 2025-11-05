@@ -7,21 +7,12 @@ import Chip from "components/base/Chip";
 import { Add } from "@mui/icons-material";
 import Board from "components/base/Board";
 import PresetDialog from "components/data/batch/PresetDialog";
-import Preset from "types/operators/presets";
 
 const Presets: NextPage = () => {
-  const { presets, addPreset, changePreset, deletePreset } = usePresets();
+  const { presets, putPreset: onChange, deletePreset } = usePresets();
 
   const [index, setIndex] = useState(0);
   const [open, setOpen] = useState(false);
-
-  const onChange = (preset: Preset) => {
-    if (index === presets.length) {
-      addPreset(preset);
-    } else if (index < presets.length) {
-      changePreset(preset);
-    }
-  };
 
   const [isClient, setIsClient] = useState(false);
 

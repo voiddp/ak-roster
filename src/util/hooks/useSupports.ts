@@ -1,56 +1,106 @@
-import { useCallback, useEffect } from "react";
+import { useCallback } from "react";
 import supabase from "supabase/supabaseClient";
 import { OperatorSupport } from "types/operators/supports";
 import handlePostgrestError from "util/fns/handlePostgrestError";
 import useLocalStorage from "./useLocalStorage";
+import { useQueryFactory } from "util/hooks/useQueryFactory";
 
 function useSupports() {
-  const [supports, _setSupport] = useLocalStorage<OperatorSupport[]>("v3_supports", []);
+  const [localSupports, setLocalSupports, lastFetchedAt] = useLocalStorage<OperatorSupport[]>("v3_supports", []);
 
-  const setSupport = useCallback(
-    async (newSupport: OperatorSupport) => {
-      const _supports = [...supports];
-      const index = _supports.findIndex((x) => x.slot == newSupport.slot);
-      if (index === -1) _supports.push(newSupport);
-      else _supports[index] = newSupport;
-      _setSupport(_supports);
-
-      const { error } = await supabase.from("supports").upsert(newSupport);
-      handlePostgrestError(error);
+  const {
+    data: querySupports,
+    useOptimisticMutation,
+  } = useQueryFactory<OperatorSupport[]>({
+    queryKey: ["supports"],
+    queryOptions: {
+      initialData: localSupports,
+      initialDataUpdatedAt: new Date(lastFetchedAt ?? 0).getTime(),
     },
-    [supports, _setSupport]
-  );
-
-  const removeSupport = useCallback(
-    async (slot: number) => {
-      const supportsCopy = supports.filter((x) => x.slot != slot);
-      _setSupport(supportsCopy);
-
-      const { error } = await supabase.from("supports").delete().eq("slot", slot);
-      handlePostgrestError(error);
-    },
-    [supports, _setSupport]
-  );
-
-  // fetch data from db
-  useEffect(() => {
-    const fetchData = async () => {
-      const {
-        data: { session },
-      } = await supabase.auth.getSession();
+    fetchFn: useCallback(async (): Promise<OperatorSupport[]> => {
+      const { data: { session } } = await supabase.auth.getSession();
       const user_id = session?.user.id;
 
+      if (!user_id) throw new Error("No user session"); 
+
+      const { data, error } = await supabase.from("supports").select().eq("user_id", user_id);
+      if (error) {
+        handlePostgrestError(error);
+        throw error;
+      }
+
+      const supportsData = (data || []).map(({ user_id, ...rest }) => rest); //remove user_id from LS
+      console.log("Fetched supports:");
+      setLocalSupports(supportsData, new Date().toISOString());
+
+      return supportsData;
+    }, [setLocalSupports]),
+  });
+
+  const setSupport = useOptimisticMutation<OperatorSupport, void>({
+    optimisticUpdate: {
+      updateFn: (currentSupports, newSupport) => {
+        const newSupports = [...currentSupports];
+        const index = newSupports.findIndex((x) => x.slot === newSupport.slot);
+        if (index === -1) {
+          newSupports.push(newSupport);
+        } else {
+          newSupports[index] = newSupport;
+        }
+
+        setLocalSupports(newSupports, null);
+        return newSupports;
+      },
+    },
+    mutationFn: async (newSupport: OperatorSupport) => {
+      const { data: { session } } = await supabase.auth.getSession();
+      const user_id = session?.user.id;
       if (!user_id) return;
 
-      const { data } = await supabase.from("supports").select().eq("user_id", user_id);
+      const { error } = await supabase.from("supports").upsert(newSupport).eq("user_id", user_id);
+      if (error) throw error;
+    },
+  });
 
-      _setSupport(data as OperatorSupport[]);
-    };
+  const removeSupport = useOptimisticMutation<number, void>({
+    optimisticUpdate: {
+      updateFn: (currentSupports, slot) => {
+        const supportsCopy = currentSupports.filter((x) => x.slot !== slot);
 
-    fetchData();
-  }, []);
+        setLocalSupports(supportsCopy, null);
+        return supportsCopy;
+      },
+    },
+    mutationFn: async (slot: number) => {
+      const { data: { session } } = await supabase.auth.getSession();
+      const user_id = session?.user.id;
+      if (!user_id) return;
 
-  return [supports, setSupport, removeSupport] as const;
+      const { error } = await supabase.from("supports").delete().eq("user_id", user_id).eq("slot", slot);
+      if (error) throw error;
+    },
+  });
+
+  //convert props
+  const _setSupport = useCallback(
+    (newSupport: OperatorSupport) => {
+      setSupport.mutate(newSupport);
+    },
+    [setSupport]
+  );
+
+  const _removeSupport = useCallback(
+    (slot: number) => {
+      removeSupport.mutate(slot);
+    },
+    [removeSupport]
+  );
+
+  return [
+    querySupports || localSupports,
+    _setSupport,
+    _removeSupport,
+  ] as const;
 }
 
 export default useSupports;

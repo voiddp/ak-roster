@@ -19,7 +19,7 @@ import Color from "components/data/profile/Color";
 
 export interface AccountMutateProps {
   user: AccountData;
-  setAccount: (accountData: AccountDataInsert) => Promise<void>;
+  setAccount: (accountData: AccountDataInsert) => void;
 }
 
 const Profile: NextPage = () => {
