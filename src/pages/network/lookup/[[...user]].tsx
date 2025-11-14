@@ -20,6 +20,7 @@ import supabase from "supabase/supabaseClient";
 import AccountData from "types/auth/accountData";
 import Roster from "types/operators/roster";
 import { Operator } from "types/operators/operator";
+import { handleTempUrlRedirect } from "util/hooks/useTemporaryProfileUrl";
 
 export const getServerSideProps = (async (context) => {
   const username = ([] as string[])
@@ -30,6 +31,10 @@ export const getServerSideProps = (async (context) => {
   if (!username) {
     return { props: { username, data: null } };
   }
+
+  //trigger self redirect if tempUrl is used.
+  const selfRedirect = handleTempUrlRedirect(context, username);
+  if (selfRedirect) return selfRedirect;
 
   const { data: _account, error } = await supabase
     .from("krooster_accounts")
