@@ -78,7 +78,7 @@ interface Props {
     groupedGoalsMap: GoalsFilteredCalculatedMap,
     settings: LocalStorageSettings;
     setSettings: (settings: LocalStorageSettings | ((settings: LocalStorageSettings) => LocalStorageSettings)) => void;
-    onCraftOne: (itemId: string, isLocal: boolean) => void
+    onCraftOne: (itemId: string, isLocal: boolean) => void;
 }
 
 const Transition = React.forwardRef(function Transition(
@@ -892,11 +892,17 @@ const MaterialsSummaryDialog = React.memo((props: Props) => {
                                                                                 zIndex: 1,
                                                                             }}
                                                                         />
-                                                                        <ItemBase itemId={id} size={getItemBaseStyling("summary_craft", fullScreen).itemBaseSize}>
-                                                                            <Typography {...getItemBaseStyling("summary_craft", fullScreen).numberCSS}>
-                                                                                {formatNumber(need)}
-                                                                            </Typography>
-                                                                        </ItemBase>
+                                                                        <CraftOneControl
+                                                                            itemId={id}
+                                                                            isCraftable={true}
+                                                                            onClick={() => onCraftOne(id, false)}
+                                                                        >
+                                                                            <ItemBase itemId={id} size={getItemBaseStyling("summary_craft", fullScreen).itemBaseSize}>
+                                                                                <Typography {...getItemBaseStyling("summary_craft", fullScreen).numberCSS}>
+                                                                                    {formatNumber(need)}
+                                                                                </Typography>
+                                                                            </ItemBase>
+                                                                        </CraftOneControl>
                                                                     </Box>
                                                                 ) : (
                                                                     <ItemBase key={id} itemId={id} size={getItemBaseStyling("summary_craft", fullScreen).itemBaseSize}>
@@ -952,53 +958,24 @@ const MaterialsSummaryDialog = React.memo((props: Props) => {
                                                                         />
                                                                     </CompletionIndicator>
                                                                 );
-                                                                const matsNodes = materials.future.map(([id, need]) => {
-                                                                    const isCraftable = materials.current.get(id)?.isCraftable ?? true;
-                                                                    return (
-                                                                        <Tooltip key={id} title={isCraftable ? "Craft One" : ""}>
-                                                                            <Box
-                                                                                key={id}
-                                                                                onClick={() => { if (isCraftable) onCraftOne(id, false); }}
-                                                                                sx={{
-                                                                                    position: "relative",
-                                                                                    display: "inline-block",
-                                                                                    cursor: isCraftable ? "pointer" : "default",
-                                                                                    transition: "opacity 0.1s",
-                                                                                    "&:hover, &:focus": {
-                                                                                        opacity: isCraftable ? 0.5 : 1,
-                                                                                    },
-                                                                                }}
-                                                                            >
-                                                                                <ItemBase
-                                                                                    key={`${groupIndex}-${op_id}-${id}`}
-                                                                                    itemId={id}
-                                                                                    size={getItemBaseStyling("summary", fullScreen).itemBaseSize}
-                                                                                >
-                                                                                    <Typography {...getItemBaseStyling("summary", fullScreen).numberCSS}>
-                                                                                        {formatNumber(need)}
-                                                                                    </Typography>
-                                                                                </ItemBase>
-                                                                                {isCraftable && (
-                                                                                    <Box
-                                                                                        sx={{
-                                                                                            position: "absolute",
-                                                                                            top: "35%",
-                                                                                            left: "50%",
-                                                                                            transform: "translate(-50%, -50%)",
-                                                                                            pointerEvents: "none",
-                                                                                            fontWeight: "900",
-                                                                                            color: "primary.main",
-                                                                                            fontSize: "1.2rem",
-                                                                                            textShadow: `-1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black`,
-                                                                                        }}
-                                                                                    >
-                                                                                        +1
-                                                                                    </Box>
-                                                                                )}
-                                                                            </Box></Tooltip>
-                                                                    )
-                                                                }
-                                                                );
+                                                                const matsNodes = materials.future.map(([id, need]) => (
+                                                                    <CraftOneControl
+                                                                        key={id}
+                                                                        itemId={id}
+                                                                        isCraftable={materials.current.get(id)?.isCraftable ?? true}
+                                                                        onClick={() => onCraftOne(id, false)}
+                                                                    >
+                                                                        <ItemBase
+                                                                            key={`${groupIndex}-${op_id}-${id}`}
+                                                                            itemId={id}
+                                                                            size={getItemBaseStyling("summary", fullScreen).itemBaseSize}
+                                                                        >
+                                                                            <Typography {...getItemBaseStyling("summary", fullScreen).numberCSS}>
+                                                                                {formatNumber(need)}
+                                                                            </Typography>
+                                                                        </ItemBase>
+                                                                    </CraftOneControl>
+                                                                ));
                                                                 return pivot ? (
                                                                     <Stack
                                                                         key={`row-${groupIndex}-${op_id}`}
@@ -1168,3 +1145,55 @@ const MaterialsSummaryDialog = React.memo((props: Props) => {
 
 MaterialsSummaryDialog.displayName = "MaterialsSummaryDialog";
 export default MaterialsSummaryDialog;
+
+interface CraftOneControlProps {
+    itemId: string;
+    isCraftable: boolean;
+    onClick: () => void;
+    children: React.ReactNode;
+}
+
+const CraftOneControl: React.FC<CraftOneControlProps> = ({
+    itemId,
+    isCraftable,
+    onClick,
+    children
+}) => {
+    if (!isCraftable) {
+        return <>{children}</>;
+    }
+
+    return (
+        <Tooltip title="Craft One">
+            <Box
+                onClick={onClick}
+                sx={{
+                    position: "relative",
+                    display: "inline-block",
+                    cursor: "pointer",
+                    transition: "opacity 0.1s",
+                    "&:hover, &:focus": {
+                        opacity: 0.5,
+                    },
+                }}
+            >
+                {children}
+                <Box
+                    sx={{
+                        position: "absolute",
+                        top: "35%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        pointerEvents: "none",
+                        fontWeight: "900",
+                        color: "primary.main",
+                        fontSize: "1.2rem",
+                        textShadow: `-1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black`,
+                    }}
+                >
+                    +1
+                </Box>
+            </Box>
+        </Tooltip>
+    );
+};
