@@ -1,6 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   //reactStrictMode: true,
+  turbopack: {
+    resolveAlias: {
+      fs: {
+        browser: './empty.js',
+      },
+    },
+  },
+  serverExternalPackages: [
+    '@supabase/supabase-js',
+    '@supabase/realtime-js',
+  ],
   webpack: (config) => {
     config.resolve.fallback = { fs: false };
 

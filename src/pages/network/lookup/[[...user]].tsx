@@ -9,7 +9,6 @@ import FilterDialog from "components/data/collate/FilterDialog";
 import SortDialog from "components/data/collate/SortDialog";
 import useSort from "util/hooks/useSort";
 import useFilter from "util/hooks/useFilter";
-import ProfileDialog from "components/lookup/ProfileDialog";
 import useLookup, { LookupData } from "util/hooks/useLookup";
 import Toolbar from "components/data/Toolbar";
 import { server } from "util/server";
@@ -20,6 +19,7 @@ import supabase from "supabase/supabaseClient";
 import AccountData from "types/auth/accountData";
 import Roster from "types/operators/roster";
 import { Operator } from "types/operators/operator";
+import dynamic from "next/dynamic";
 
 export const getServerSideProps = (async (context) => {
   const username = ([] as string[])
@@ -62,7 +62,7 @@ export const getServerSideProps = (async (context) => {
   username: string;
   data: LookupData | null;
 }>;
-
+const ProfileDialog = dynamic(() => import("components/lookup/ProfileDialogClient"), { ssr: false });
 const Lookup = ({ username: _username, data: _data }: InferGetServerSidePropsType<typeof getServerSideProps>) => {
   const [username, setUsername] = useState<string>("");
   const { query, data, loading, clear } = useLookup();

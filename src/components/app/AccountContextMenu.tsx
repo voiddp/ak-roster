@@ -43,6 +43,7 @@ const AccountContextMenu = (props: Props) => {
       handleAuthError(error);
       return;
     }
+    document.cookie = `supabase-auth-token=; Max-Age=0; path=/;`;
     if (window.location.pathname.startsWith('/u/')) {
       window.location.href = '/';
     } else {

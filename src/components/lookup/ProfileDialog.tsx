@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import {
   alpha,
   Box,
@@ -25,13 +25,13 @@ import imageBase from "util/imageBase";
 import getContrastText from "util/fns/getContrastText";
 import AccountStatistic from "./AccountStatistic";
 
-interface Props extends DialogProps {
+export interface ProfileDialogProps extends DialogProps {
   data?: LookupData;
   onClose: () => void;
   color?: string;
 }
 
-const ProfileDialog = (props: Props) => {
+const ProfileDialog = (props: ProfileDialogProps) => {
   const { data, onClose, color, ...rest } = props;
 
   const theme = useTheme();
@@ -42,6 +42,7 @@ const ProfileDialog = (props: Props) => {
 
   const ssTarget = useRef<HTMLDivElement | null>(null);
   const shareAnchor = useRef<HTMLButtonElement | null>(null);
+  const [shareAnchorEl, setShareAnchorEl] = useState<HTMLElement | null>(null);
 
   const downloadImage = async (copy = false) => {
     if (!ssTarget.current || !data) return;
@@ -100,10 +101,14 @@ const ProfileDialog = (props: Props) => {
 
   const [open, setOpen] = React.useState(false);
   const openShare = React.useCallback(() => {
-    setOpen(true);
+    if (shareAnchor.current) {
+      setShareAnchorEl(shareAnchor.current);
+      setOpen(true);
+    }
   }, []);
 
   const closeShare = React.useCallback(() => {
+    setShareAnchorEl(null);
     setOpen(false);
   }, []);
 
@@ -320,7 +325,7 @@ const ProfileDialog = (props: Props) => {
         </Button>
       </Box>
       <ShareDialog
-        anchorEl={shareAnchor.current}
+        anchorEl={shareAnchorEl}
         open={open}
         onClose={closeShare}
         save={handleImageDownload}

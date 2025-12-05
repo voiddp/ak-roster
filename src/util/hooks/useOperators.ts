@@ -71,7 +71,7 @@ function useOperators() {
           localStorage.removeItem("operators");
         }
       }
-
+      console.log("fetched ops",_roster);
       hydrated.current = true;
       if (!isCanceled) setOperators(_roster);
     };

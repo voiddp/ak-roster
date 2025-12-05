@@ -1,4 +1,4 @@
-import { createBrowserSupabaseClient } from "@supabase/auth-helpers-nextjs";
+import { createClient } from "@supabase/supabase-js";
 import { ImageResponse } from "@vercel/og";
 import operatorJson from "data/operators";
 import { NextApiRequest } from "next";
@@ -52,7 +52,13 @@ export default async function handler(request: NextApiRequest) {
 
   const username = user.toString().replace(",", "");
 
-  const supabase = createBrowserSupabaseClient<Database>();
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+  const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+
+  const supabase = createClient<Database>(
+    supabaseUrl,
+    supabaseAnonKey
+  );
 
   const { data: account, error: accountError } = await supabase
     .from("krooster_accounts")
@@ -140,9 +146,9 @@ export default async function handler(request: NextApiRequest) {
             src={
               assistant
                 ? getAvatarFull({
-                    ...assistant,
-                    ...operatorJson[assistant.op_id],
-                  }).replace(".webp", ".png")
+                  ...assistant,
+                  ...operatorJson[assistant.op_id],
+                }).replace(".webp", ".png")
                 : `${imageBase}/characters/logo_rhodes.png`
             }
             style={{

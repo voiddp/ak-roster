@@ -64,7 +64,7 @@ const Layout = React.memo((props: Props) => {
           },
         }}
       >
-        <AppDrawer tab={tab} page={page} open={drawerOpen} onDrawerToggle={handleDrawerToggle} />
+        {drawerOpen && <AppDrawer tab={tab} page={page} open={drawerOpen} onDrawerToggle={handleDrawerToggle} />}
         <AppBar position="sticky" enableColorOnDark sx={{ gridArea: "header" }}>
           <Toolbar variant="dense" sx={{ gap: 1 }}>
             {header ?? (
