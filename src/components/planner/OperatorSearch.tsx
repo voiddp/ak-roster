@@ -177,7 +177,7 @@ const ListboxComponent = React.forwardRef<HTMLDivElement, React.HTMLAttributes<H
 ) {
   const { children, ...other } = props;
   const itemData: React.ReactNode[] = [];
-  (children as React.ReactElement[]).forEach((item: React.ReactElement & { children?: React.ReactElement[] }) => {
+  (children as React.ReactElement<any>[]).forEach((item: React.ReactElement<any> & { children?: React.ReactElement<any>[] }) => {
     itemData.push(item);
     itemData.push(...(item.children || []));
   });

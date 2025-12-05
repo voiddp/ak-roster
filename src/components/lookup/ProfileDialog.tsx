@@ -40,7 +40,7 @@ const ProfileDialog = (props: Props) => {
   const [saving, setSaving] = React.useState(false);
   const [statsCollapsed, setStatsCollasped] = React.useState(true);
 
-  const ssTarget = useRef<HTMLDivElement>();
+  const ssTarget = useRef<HTMLDivElement | null>(null);
   const shareAnchor = useRef<HTMLButtonElement | null>(null);
 
   const downloadImage = async (copy = false) => {
