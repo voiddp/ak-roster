@@ -1,6 +1,7 @@
 {
   "name": "ak-roster-dev",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
+  "updateContentCommand": "sudo chmod 777 /tmp",
   "forwardPorts": [3000],
   "postCreateCommand": "yarn install && git submodule update --init --recursive --force --remote",
   "postStartCommand": "git submodule sync --recursive && git submodule update --init --recursive --force --remote && git fetch --all"
