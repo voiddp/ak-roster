@@ -4,9 +4,10 @@ FROM mcr.microsoft.com/devcontainers/base:alpine-3.20
 # Install git, nodejs, yarn and dependencies
 RUN apk update && apk add --no-cache \
     gcompat \
-    stdc++ \
+    libstdc++ \
     bash \
     tar \
     gzip \
     curl \
+    git \
     yarn
