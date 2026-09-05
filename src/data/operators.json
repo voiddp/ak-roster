@@ -58,6 +58,39 @@
     "skillLevels": [],
     "eliteLevels": []
   },
+  "char_4220_kormr": {
+    "id": "char_4220_kormr",
+    "name": "Koromaru",
+    "cnName": "虎狼丸",
+    "rarity": 1,
+    "class": "Guard",
+    "branch": {
+      "id": "sword",
+      "name": "Swordmaster"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "sees"
+    ],
+    "factionsHidden": [
+      "laterano"
+    ],
+    "pools": [
+      "Limited",
+      "Free"
+    ],
+    "skillData": [],
+    "moduleData": [],
+    "potentials": [
+      "天赋效果加强",
+      "天赋效果加强",
+      "天赋效果加强",
+      "天赋效果加强",
+      "天赋效果加强"
+    ],
+    "skillLevels": [],
+    "eliteLevels": []
+  },
   "char_376_therex": {
     "id": "char_376_therex",
     "name": "Thermal-EX",
@@ -4465,7 +4498,8 @@
     "pools": [
       "Kernel",
       "Kernel CN",
-      "Standard"
+      "Standard",
+      "Recruitment"
     ],
     "skillData": [
       {
@@ -29415,6 +29449,376 @@
       }
     ]
   },
+  "char_4237_jcinta": {
+    "id": "char_4237_jcinta",
+    "name": "Jacinta",
+    "cnName": "嘉辛塔",
+    "rarity": 5,
+    "class": "Vanguard",
+    "branch": {
+      "id": "bearer",
+      "name": "Standard Bearer"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "rim"
+    ],
+    "pools": [
+      "Standard"
+    ],
+    "skillData": [
+      {
+        "skillId": "skcom_assist_cost[3]",
+        "iconId": null,
+        "skillName": "支援号令·γ型",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31044",
+                "quantity": 3
+              },
+              {
+                "id": "31113",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "30054",
+                "quantity": 3
+              },
+              {
+                "id": "31104",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30165",
+                "quantity": 4
+              },
+              {
+                "id": "30014",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_jcinta_2",
+        "iconId": null,
+        "skillName": "伞下乘荫",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31054",
+                "quantity": 3
+              },
+              {
+                "id": "31053",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31084",
+                "quantity": 3
+              },
+              {
+                "id": "31074",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30115",
+                "quantity": 4
+              },
+              {
+                "id": "31034",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "弹射起步",
+        "moduleId": "uniequip_002_jcinta",
+        "typeName": "BEA-X",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "31014",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 40000
+              }
+            ],
+            "name": "Module BEA-X Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 20
+              },
+              {
+                "id": "31094",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 50000
+              }
+            ],
+            "name": "Module BEA-X Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 8
+              },
+              {
+                "id": "31114",
+                "quantity": 5
+              },
+              {
+                "id": "4001",
+                "quantity": 60000
+              }
+            ],
+            "name": "Module BEA-X Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "防御力+23",
+      "天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          },
+          {
+            "id": "30061",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30012",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30022",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "31013",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 6
+          },
+          {
+            "id": "30103",
+            "quantity": 3
+          },
+          {
+            "id": "30043",
+            "quantity": 1
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 20000
+          },
+          {
+            "id": "3211",
+            "quantity": 4
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          },
+          {
+            "id": "30012",
+            "quantity": 3
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 120000
+          },
+          {
+            "id": "3213",
+            "quantity": 3
+          },
+          {
+            "id": "31044",
+            "quantity": 7
+          },
+          {
+            "id": "30073",
+            "quantity": 20
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
   "char_476_blkngt": {
     "id": "char_476_blkngt",
     "name": "Blacknight",
@@ -39074,7 +39478,7 @@
       "id": "centurion",
       "name": "Centurion"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "minos"
     ],
@@ -39085,7 +39489,7 @@
       {
         "skillId": "skchr_varkis_1",
         "iconId": null,
-        "skillName": "奔流",
+        "skillName": "Raging River",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -39149,7 +39553,7 @@
       {
         "skillId": "skchr_varkis_2",
         "iconId": null,
-        "skillName": "同胞的意志",
+        "skillName": "The Will of His People",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -39213,7 +39617,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "回家的路",
+        "moduleName": "Way Home",
         "moduleId": "uniequip_002_varkis",
         "typeName": "CEN-Y",
         "stages": [
@@ -39283,15 +39687,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-10秒",
-      "部署费用-1",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -10 sec",
+      "DP Cost -1",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -48499,6 +48903,379 @@
       }
     ]
   },
+  "char_4218_aigis": {
+    "id": "char_4218_aigis",
+    "name": "Aegis",
+    "cnName": "埃癸斯",
+    "rarity": 5,
+    "class": "Sniper",
+    "branch": {
+      "id": "skybreaker",
+      "name": "Skybreaker"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "sees"
+    ],
+    "factionsHidden": [
+      "laterano"
+    ],
+    "pools": [
+      "Limited"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_aigis_1",
+        "iconId": null,
+        "skillName": "启动狂宴模式",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31014",
+                "quantity": 3
+              },
+              {
+                "id": "30063",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31044",
+                "quantity": 3
+              },
+              {
+                "id": "31094",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30155",
+                "quantity": 4
+              },
+              {
+                "id": "31064",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_aigis_2",
+        "iconId": null,
+        "skillName": "全弹发射",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31114",
+                "quantity": 3
+              },
+              {
+                "id": "30073",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31054",
+                "quantity": 3
+              },
+              {
+                "id": "30014",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30145",
+                "quantity": 4
+              },
+              {
+                "id": "30044",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "约定的证明",
+        "moduleId": "uniequip_002_aigis",
+        "typeName": "BRK-X",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "30054",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 40000
+              }
+            ],
+            "name": "Module BRK-X Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 20
+              },
+              {
+                "id": "31064",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 50000
+              }
+            ],
+            "name": "Module BRK-X Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 8
+              },
+              {
+                "id": "31084",
+                "quantity": 5
+              },
+              {
+                "id": "4001",
+                "quantity": 60000
+              }
+            ],
+            "name": "Module BRK-X Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "攻击力+33",
+      "天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          },
+          {
+            "id": "30011",
+            "quantity": 10
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30022",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30032",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "31093",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 6
+          },
+          {
+            "id": "31043",
+            "quantity": 3
+          },
+          {
+            "id": "30013",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 20000
+          },
+          {
+            "id": "3241",
+            "quantity": 4
+          },
+          {
+            "id": "30052",
+            "quantity": 4
+          },
+          {
+            "id": "30022",
+            "quantity": 2
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 120000
+          },
+          {
+            "id": "3243",
+            "quantity": 3
+          },
+          {
+            "id": "31104",
+            "quantity": 9
+          },
+          {
+            "id": "31083",
+            "quantity": 8
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
   "char_002_amiya": {
     "id": "char_002_amiya",
     "name": "Amiya",
@@ -48948,6 +49725,7 @@
     },
     "isCnOnly": false,
     "factions": [
+      "student",
       "ursus"
     ],
     "pools": [
@@ -52284,12 +53062,9 @@
       "id": "splashcaster",
       "name": "Splash"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "siracusa"
-    ],
-    "factionsHidden": [
-      "leithanien"
     ],
     "pools": [
       "Standard"
@@ -52298,7 +53073,7 @@
       {
         "skillId": "skchr_liesel_1",
         "iconId": null,
-        "skillName": "合奏起拍",
+        "skillName": "Conductor's Cue",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -52362,7 +53137,7 @@
       {
         "skillId": "skchr_liesel_2",
         "iconId": null,
-        "skillName": "直到终曲",
+        "skillName": "Al Fine",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -52426,7 +53201,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "“暮约”",
+        "moduleName": "'Dusk Covenant'",
         "moduleId": "uniequip_002_liesel",
         "typeName": "SPC-Y",
         "stages": [
@@ -52496,15 +53271,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-4秒",
-      "攻击力+32",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -4 sec",
+      "ATK +32",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -56354,6 +57129,376 @@
           {
             "id": "30043",
             "quantity": 12
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
+  "char_4236_tmslot": {
+    "id": "char_4236_tmslot",
+    "name": "Timeslot",
+    "cnName": "时隙",
+    "rarity": 5,
+    "class": "Caster",
+    "branch": {
+      "id": "funnel",
+      "name": "Mech-accord"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "rim"
+    ],
+    "pools": [
+      "Free"
+    ],
+    "skillData": [
+      {
+        "skillId": "skcom_atk_up[3]",
+        "iconId": null,
+        "skillName": "攻击力强化·γ型",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "30054",
+                "quantity": 3
+              },
+              {
+                "id": "31013",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31114",
+                "quantity": 3
+              },
+              {
+                "id": "31064",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30155",
+                "quantity": 4
+              },
+              {
+                "id": "31054",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_tmslot_2",
+        "iconId": null,
+        "skillName": "科技与传统仪式",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31084",
+                "quantity": 3
+              },
+              {
+                "id": "31093",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31024",
+                "quantity": 3
+              },
+              {
+                "id": "30044",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30145",
+                "quantity": 4
+              },
+              {
+                "id": "31094",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "突发性创造思维",
+        "moduleId": "uniequip_002_tmslot",
+        "typeName": "FUN-X",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "30014",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 40000
+              }
+            ],
+            "name": "Module FUN-X Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 20
+              },
+              {
+                "id": "31024",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 50000
+              }
+            ],
+            "name": "Module FUN-X Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 8
+              },
+              {
+                "id": "31034",
+                "quantity": 5
+              },
+              {
+                "id": "4001",
+                "quantity": 60000
+              }
+            ],
+            "name": "Module FUN-X Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-10秒",
+      "部署费用-1",
+      "天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          },
+          {
+            "id": "30051",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30062",
+            "quantity": 2
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30012",
+            "quantity": 8
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30053",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 6
+          },
+          {
+            "id": "31063",
+            "quantity": 3
+          },
+          {
+            "id": "31073",
+            "quantity": 2
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 20000
+          },
+          {
+            "id": "3251",
+            "quantity": 4
+          },
+          {
+            "id": "30032",
+            "quantity": 5
+          },
+          {
+            "id": "30062",
+            "quantity": 2
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 120000
+          },
+          {
+            "id": "3253",
+            "quantity": 3
+          },
+          {
+            "id": "30044",
+            "quantity": 7
+          },
+          {
+            "id": "30063",
+            "quantity": 9
           }
         ],
         "name": "Elite 2",
@@ -64901,14 +66046,11 @@
     "class": "Medic",
     "branch": {
       "id": "watchman",
-      "name": "Watchman - 守望者"
+      "name": "Watchman"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "yan"
-    ],
-    "factionsHidden": [
-      "sargon"
     ],
     "pools": [
       "Standard"
@@ -64917,7 +66059,7 @@
       {
         "skillId": "skchr_taraxa_1",
         "iconId": null,
-        "skillName": "何处着",
+        "skillName": "Where To?",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -64981,7 +66123,7 @@
       {
         "skillId": "skchr_taraxa_2",
         "iconId": null,
-        "skillName": "扶风起",
+        "skillName": "Upon the Wind",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -65045,11 +66187,11 @@
     ],
     "moduleData": [],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-4秒",
-      "防御力+20",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -4 sec",
+      "DEF +20",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -74261,7 +75403,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "被摩挲的日子",
+        "moduleName": "The Days Rubbed to Silence",
         "moduleId": "uniequip_002_philae",
         "typeName": "PRP-X",
         "stages": [
@@ -74331,7 +75473,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -77461,7 +78603,7 @@
       "id": "siegesniper",
       "name": "Besieger"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "yan"
     ],
@@ -77472,7 +78614,7 @@
       {
         "skillId": "skchr_ju_1",
         "iconId": null,
-        "skillName": "良弓难张",
+        "skillName": "Fine Bow, Difficult Draw",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -77536,7 +78678,7 @@
       {
         "skillId": "skchr_ju_2",
         "iconId": null,
-        "skillName": "良翼难乘",
+        "skillName": "Fine Wings, Difficult Flight",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -77600,7 +78742,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "田间吓兽人",
+        "moduleName": "Scarecrow in the Field",
         "moduleId": "uniequip_002_ju",
         "typeName": "SIE-X",
         "stages": [
@@ -77670,15 +78812,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-10秒",
-      "部署费用-1",
-      "攻击力+34",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -10 sec",
+      "DP Cost -1",
+      "ATK +34",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -87108,7 +88250,7 @@
       "id": "blessing",
       "name": "Abjurer"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "rhodes"
     ],
@@ -87122,7 +88264,7 @@
       {
         "skillId": "skchr_flwr2_1",
         "iconId": null,
-        "skillName": "“山中的喜悦”",
+        "skillName": "'Mountain Delight'",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -87186,7 +88328,7 @@
       {
         "skillId": "skchr_flwr2_2",
         "iconId": null,
-        "skillName": "“神殿的余烬”",
+        "skillName": "'Temple Embers'",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -87250,7 +88392,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "“双月的呼吸”",
+        "moduleName": "'Breath of Twin Moons'",
         "moduleId": "uniequip_002_flwr2",
         "typeName": "BLS-Y",
         "stages": [
@@ -87320,15 +88462,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-4秒",
-      "生命上限+160",
-      "天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -4 sec",
+      "Max HP +160",
+      "Improves Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -88226,7 +89368,7 @@
       "ursus"
     ],
     "pools": [
-      "Standard"
+      "Free"
     ],
     "skillData": [
       {
@@ -88574,6 +89716,675 @@
           {
             "id": "30013",
             "quantity": 22
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
+  "char_4219_yukari": {
+    "id": "char_4219_yukari",
+    "name": "Yukari Takeba",
+    "cnName": "岳羽由加莉",
+    "rarity": 5,
+    "class": "Supporter",
+    "branch": {
+      "id": "supportiveranger",
+      "name": "Supportiveranger - 游击手"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "sees"
+    ],
+    "factionsHidden": [
+      "laterano"
+    ],
+    "pools": [
+      "Limited"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_yukari_1",
+        "iconId": null,
+        "skillName": "龙卷箭",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31024",
+                "quantity": 3
+              },
+              {
+                "id": "31083",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31014",
+                "quantity": 3
+              },
+              {
+                "id": "31034",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30165",
+                "quantity": 4
+              },
+              {
+                "id": "31104",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_yukari_2",
+        "iconId": null,
+        "skillName": "明镜止水",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "30054",
+                "quantity": 3
+              },
+              {
+                "id": "30083",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31114",
+                "quantity": 3
+              },
+              {
+                "id": "31064",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30115",
+                "quantity": 4
+              },
+              {
+                "id": "31074",
+                "quantity": 4
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "命运的奖赏",
+        "moduleId": "uniequip_002_yukari",
+        "typeName": "RAN-X",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "30044",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 40000
+              }
+            ],
+            "name": "Module RAN-X Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 20
+              },
+              {
+                "id": "31044",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 50000
+              }
+            ],
+            "name": "Module RAN-X Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 2
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 8
+              },
+              {
+                "id": "31104",
+                "quantity": 5
+              },
+              {
+                "id": "4001",
+                "quantity": 60000
+              }
+            ],
+            "name": "Module RAN-X Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "攻击力+30",
+      "再部署时间-6秒",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          },
+          {
+            "id": "30021",
+            "quantity": 7
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30032",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "31113",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 6
+          },
+          {
+            "id": "30023",
+            "quantity": 3
+          },
+          {
+            "id": "30093",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 20000
+          },
+          {
+            "id": "3271",
+            "quantity": 4
+          },
+          {
+            "id": "30062",
+            "quantity": 3
+          },
+          {
+            "id": "30032",
+            "quantity": 3
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 120000
+          },
+          {
+            "id": "3273",
+            "quantity": 3
+          },
+          {
+            "id": "31054",
+            "quantity": 8
+          },
+          {
+            "id": "30083",
+            "quantity": 14
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
+  "char_4234_pedro": {
+    "id": "char_4234_pedro",
+    "name": "Pedro",
+    "cnName": "佩德洛",
+    "rarity": 5,
+    "class": "Supporter",
+    "branch": {
+      "id": "supportiveranger",
+      "name": "Supportiveranger - 游击手"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "bolivar"
+    ],
+    "pools": [
+      "Standard"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_pedro_1",
+        "iconId": null,
+        "skillName": "标记射击",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31114",
+                "quantity": 3
+              },
+              {
+                "id": "31033",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31054",
+                "quantity": 3
+              },
+              {
+                "id": "30014",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30165",
+                "quantity": 4
+              },
+              {
+                "id": "31084",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_pedro_2",
+        "iconId": null,
+        "skillName": "交替撤离",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 5
+              },
+              {
+                "id": "31024",
+                "quantity": 3
+              },
+              {
+                "id": "30053",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 6
+              },
+              {
+                "id": "31014",
+                "quantity": 3
+              },
+              {
+                "id": "31034",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 10
+              },
+              {
+                "id": "30115",
+                "quantity": 4
+              },
+              {
+                "id": "31044",
+                "quantity": 4
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "攻击力+30",
+      "天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 4
+          },
+          {
+            "id": "30041",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30052",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "30062",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 6
+          },
+          {
+            "id": "31033",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 6
+          },
+          {
+            "id": "30033",
+            "quantity": 3
+          },
+          {
+            "id": "30083",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 20000
+          },
+          {
+            "id": "3271",
+            "quantity": 4
+          },
+          {
+            "id": "30022",
+            "quantity": 4
+          },
+          {
+            "id": "30052",
+            "quantity": 3
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 120000
+          },
+          {
+            "id": "3273",
+            "quantity": 3
+          },
+          {
+            "id": "31084",
+            "quantity": 7
+          },
+          {
+            "id": "31053",
+            "quantity": 11
           }
         ],
         "name": "Elite 2",
@@ -88969,7 +90780,8 @@
     ],
     "pools": [
       "Kernel",
-      "Kernel CN"
+      "Kernel CN",
+      "Recruitment"
     ],
     "skillData": [
       {
@@ -98608,6 +100420,47 @@
           }
         ],
         "isCnOnly": false
+      },
+      {
+        "moduleName": "菲亚梅塔特限证章",
+        "moduleId": "uniequip_004_phenxi",
+        "typeName": "ISW-A",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module ISW-A Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module ISW-A Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module ISW-A Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
       }
     ],
     "potentials": [
@@ -99055,7 +100908,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "“心”",
+        "moduleName": "'Сердце'",
         "moduleId": "uniequip_003_poca",
         "typeName": "SIE-Y",
         "stages": [
@@ -99125,7 +100978,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -108221,6 +110074,448 @@
       }
     ]
   },
+  "char_4229_aphris": {
+    "id": "char_4229_aphris",
+    "name": "Aphrissa",
+    "cnName": "谬因",
+    "rarity": 6,
+    "class": "Caster",
+    "branch": {
+      "id": "blastcaster",
+      "name": "Blast"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "columbia"
+    ],
+    "pools": [
+      "Standard"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_aphris_1",
+        "iconId": null,
+        "skillName": "连续映射",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31064",
+                "quantity": 4
+              },
+              {
+                "id": "30083",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31084",
+                "quantity": 4
+              },
+              {
+                "id": "31074",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30145",
+                "quantity": 6
+              },
+              {
+                "id": "31024",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_aphris_2",
+        "iconId": null,
+        "skillName": "临界瞬爆",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "30044",
+                "quantity": 4
+              },
+              {
+                "id": "31073",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31044",
+                "quantity": 4
+              },
+              {
+                "id": "31094",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30165",
+                "quantity": 6
+              },
+              {
+                "id": "30054",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_aphris_3",
+        "iconId": null,
+        "skillName": "混沌的本质",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31104",
+                "quantity": 4
+              },
+              {
+                "id": "30043",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 3 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31054",
+                "quantity": 4
+              },
+              {
+                "id": "30014",
+                "quantity": 10
+              }
+            ],
+            "name": "Skill 3 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30115",
+                "quantity": 6
+              },
+              {
+                "id": "31084",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 3 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "第三相态",
+        "moduleId": "uniequip_002_aphris",
+        "typeName": "BLA-Y",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30145",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module BLA-Y Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30165",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module BLA-Y Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30115",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module BLA-Y Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "攻击力+35",
+      "部署费用-1",
+      "第二天赋效果增强"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          },
+          {
+            "id": "30011",
+            "quantity": 6
+          },
+          {
+            "id": "30061",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30022",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30032",
+            "quantity": 4
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "31063",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 8
+          },
+          {
+            "id": "30103",
+            "quantity": 5
+          },
+          {
+            "id": "31083",
+            "quantity": 1
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 30000
+          },
+          {
+            "id": "3251",
+            "quantity": 5
+          },
+          {
+            "id": "30052",
+            "quantity": 7
+          },
+          {
+            "id": "30012",
+            "quantity": 7
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 180000
+          },
+          {
+            "id": "3253",
+            "quantity": 4
+          },
+          {
+            "id": "30165",
+            "quantity": 4
+          },
+          {
+            "id": "31104",
+            "quantity": 2
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
   "char_213_mostma": {
     "id": "char_213_mostma",
     "name": "Mostima",
@@ -112210,7 +114505,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "异客特限证章",
+        "moduleName": "Passenger's Specialized Badge",
         "moduleId": "uniequip_004_pasngr",
         "typeName": "RA-A",
         "stages": [
@@ -112248,7 +114543,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -112426,7 +114721,8 @@
     ],
     "pools": [
       "Kernel",
-      "Kernel CN"
+      "Kernel CN",
+      "Recruitment"
     ],
     "skillData": [
       {
@@ -116676,6 +118972,79 @@
           }
         ],
         "isCnOnly": false
+      },
+      {
+        "moduleName": "沟通小助手",
+        "moduleId": "uniequip_003_blaze2",
+        "typeName": "PRI-Y",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30115",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module PRI-Y Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30155",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module PRI-Y Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30145",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module PRI-Y Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
       }
     ],
     "potentials": [
@@ -128791,7 +131160,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "毒医残章",
+        "moduleName": "Remnant of the Malpractice",
         "moduleId": "uniequip_003_haak",
         "typeName": "GEE-Y",
         "stages": [
@@ -128861,7 +131230,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -131615,6 +133984,451 @@
       }
     ]
   },
+  "char_4217_makoto": {
+    "id": "char_4217_makoto",
+    "name": "Makoto Yuki",
+    "cnName": "结城理",
+    "rarity": 6,
+    "class": "Specialist",
+    "branch": {
+      "id": "dollkeeper",
+      "name": "Dollkeeper"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "sees"
+    ],
+    "factionsHidden": [
+      "laterano"
+    ],
+    "pools": [
+      "Limited"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_makoto_1",
+        "iconId": null,
+        "skillName": "俄耳甫斯的竖琴",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "30014",
+                "quantity": 4
+              },
+              {
+                "id": "31033",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31024",
+                "quantity": 4
+              },
+              {
+                "id": "30044",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30145",
+                "quantity": 6
+              },
+              {
+                "id": "31114",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_makoto_2",
+        "iconId": null,
+        "skillName": "塔纳托斯的囚锁",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31034",
+                "quantity": 4
+              },
+              {
+                "id": "30053",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "30054",
+                "quantity": 4
+              },
+              {
+                "id": "31104",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30165",
+                "quantity": 6
+              },
+              {
+                "id": "31024",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_makoto_3",
+        "iconId": null,
+        "skillName": "开辟明日的剑刃",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31064",
+                "quantity": 4
+              },
+              {
+                "id": "31013",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 3 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31084",
+                "quantity": 4
+              },
+              {
+                "id": "31074",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 3 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30115",
+                "quantity": 6
+              },
+              {
+                "id": "30054",
+                "quantity": 5
+              }
+            ],
+            "name": "Skill 3 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "彼此的声音",
+        "moduleId": "uniequip_002_makoto",
+        "typeName": "PUM-Y",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30145",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module PUM-Y Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30165",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module PUM-Y Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30115",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module PUM-Y Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "第二天赋效果增强",
+      "攻击力+34",
+      "第一天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          },
+          {
+            "id": "30051",
+            "quantity": 6
+          },
+          {
+            "id": "30011",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30062",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30012",
+            "quantity": 5
+          },
+          {
+            "id": "30062",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "31103",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 8
+          },
+          {
+            "id": "31033",
+            "quantity": 5
+          },
+          {
+            "id": "30013",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 30000
+          },
+          {
+            "id": "3281",
+            "quantity": 5
+          },
+          {
+            "id": "30032",
+            "quantity": 8
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 180000
+          },
+          {
+            "id": "3283",
+            "quantity": 4
+          },
+          {
+            "id": "30165",
+            "quantity": 4
+          },
+          {
+            "id": "31114",
+            "quantity": 2
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
   "char_4048_doroth": {
     "id": "char_4048_doroth",
     "name": "Dorothy",
@@ -132584,7 +135398,7 @@
       "id": "traper",
       "name": "Trapmaster"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "sui",
       "yan"
@@ -132596,7 +135410,7 @@
       {
         "skillId": "skchr_wang_1",
         "iconId": null,
-        "skillName": "取势",
+        "skillName": "Power Play",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -132660,7 +135474,7 @@
       {
         "skillId": "skchr_wang_2",
         "iconId": null,
-        "skillName": "连星",
+        "skillName": "Wall of Stars",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -132724,7 +135538,7 @@
       {
         "skillId": "skchr_wang_3",
         "iconId": null,
-        "skillName": "天下劫",
+        "skillName": "All-Dominating Fight",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -132788,7 +135602,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "兽形棋盒",
+        "moduleName": "Beast-Shaped Stone Container",
         "moduleId": "uniequip_002_wang",
         "typeName": "TRP-X",
         "stages": [
@@ -132858,15 +135672,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "第一天赋效果增强",
-      "攻击力+27",
-      "第二天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Improves First Talent",
+      "ATK +27",
+      "Improves Second Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -133452,6 +136266,377 @@
           {
             "id": "31044",
             "quantity": 7
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
+  "char_1015_aglna2": {
+    "id": "char_1015_aglna2",
+    "name": "Angelina the Mellow Wish",
+    "cnName": "予愿安洁莉娜",
+    "rarity": 6,
+    "class": "Specialist",
+    "branch": {
+      "id": "skywalker",
+      "name": "Skyranger"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "rhodes"
+    ],
+    "factionsHidden": [
+      "siracusa"
+    ],
+    "pools": [
+      "Limited"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_aglna2_1",
+        "iconId": null,
+        "skillName": "极速送达",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31104",
+                "quantity": 4
+              },
+              {
+                "id": "31043",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31054",
+                "quantity": 4
+              },
+              {
+                "id": "30014",
+                "quantity": 10
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30165",
+                "quantity": 6
+              },
+              {
+                "id": "31044",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_aglna2_2",
+        "iconId": null,
+        "skillName": "重力自定义",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31074",
+                "quantity": 4
+              },
+              {
+                "id": "30023",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31014",
+                "quantity": 4
+              },
+              {
+                "id": "31034",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30115",
+                "quantity": 6
+              },
+              {
+                "id": "31054",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_aglna2_3",
+        "iconId": null,
+        "skillName": "酸橙的心事",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31094",
+                "quantity": 4
+              },
+              {
+                "id": "31103",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 3 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31114",
+                "quantity": 4
+              },
+              {
+                "id": "31064",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 3 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30155",
+                "quantity": 6
+              },
+              {
+                "id": "31014",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 3 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [],
+    "potentials": [
+      "部署费用-1",
+      "第一天赋效果增强",
+      "攻击力+33",
+      "第二天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          },
+          {
+            "id": "30041",
+            "quantity": 5
+          },
+          {
+            "id": "30021",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30052",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30062",
+            "quantity": 3
+          },
+          {
+            "id": "30032",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30023",
+            "quantity": 7
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 8
+          },
+          {
+            "id": "31103",
+            "quantity": 5
+          },
+          {
+            "id": "30043",
+            "quantity": 2
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 30000
+          },
+          {
+            "id": "3281",
+            "quantity": 5
+          },
+          {
+            "id": "30022",
+            "quantity": 8
+          },
+          {
+            "id": "30032",
+            "quantity": 5
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 180000
+          },
+          {
+            "id": "3283",
+            "quantity": 4
+          },
+          {
+            "id": "30145",
+            "quantity": 4
+          },
+          {
+            "id": "31094",
+            "quantity": 2
           }
         ],
         "name": "Elite 2",
@@ -135852,7 +139037,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "想要留下的生命",
+        "moduleName": "Life I Want to Retain",
         "moduleId": "uniequip_003_agoat2",
         "typeName": "WDM-Y",
         "stages": [
@@ -135922,7 +139107,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -136366,6 +139551,79 @@
           }
         ],
         "isCnOnly": false
+      },
+      {
+        "moduleName": "“独属自己的一隅”",
+        "moduleId": "uniequip_003_reed2",
+        "typeName": "INC-Y",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30155",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module INC-Y Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30145",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module INC-Y Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30165",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module INC-Y Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
       }
     ],
     "potentials": [
@@ -136534,7 +139792,7 @@
       "id": "incantationmedic",
       "name": "Incantation"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "sargon"
     ],
@@ -136548,7 +139806,7 @@
       {
         "skillId": "skchr_titi_1",
         "iconId": null,
-        "skillName": "缓蚀",
+        "skillName": "Anti-Degradative",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -136612,7 +139870,7 @@
       {
         "skillId": "skchr_titi_2",
         "iconId": null,
-        "skillName": "封护",
+        "skillName": "Sealant",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -136676,7 +139934,7 @@
       {
         "skillId": "skchr_titi_3",
         "iconId": null,
-        "skillName": "旧日绽放",
+        "skillName": "History's Bloom",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -136740,7 +139998,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "远方的礼物",
+        "moduleName": "Gifts from Columbia",
         "moduleId": "uniequip_002_titi",
         "typeName": "INC-X",
         "stages": [
@@ -136810,15 +140068,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "第一天赋效果增强",
-      "攻击力+26",
-      "部署费用-1",
-      "第二天赋效果增强"
+      "DP Cost -1",
+      "Improves First Talent",
+      "ATK +26",
+      "DP Cost -1",
+      "Improves Second Talent"
     ],
     "skillLevels": [
       {
@@ -137419,7 +140677,7 @@
     "class": "Medic",
     "branch": {
       "id": "watchman",
-      "name": "Watchman - 守望者"
+      "name": "Watchman"
     },
     "isCnOnly": true,
     "factions": [
@@ -142690,7 +145948,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "未曾风化",
+        "moduleName": "Unweathered",
         "moduleId": "uniequip_003_jesca2",
         "typeName": "SPT-Y",
         "stages": [
@@ -142760,7 +146018,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -143434,6 +146692,405 @@
       }
     ]
   },
+  "char_4230_mcnist": {
+    "id": "char_4230_mcnist",
+    "name": "Mechanist",
+    "cnName": "机械师",
+    "rarity": 6,
+    "class": "Defender",
+    "branch": {
+      "id": "shotprotector",
+      "name": "Sentry Protector"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "elite",
+      "rhodes"
+    ],
+    "factionsHidden": [
+      "columbia"
+    ],
+    "pools": [
+      "Free"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_mcnist_1",
+        "iconId": null,
+        "skillName": "聚类分析",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31074",
+                "quantity": 4
+              },
+              {
+                "id": "30013",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31014",
+                "quantity": 4
+              },
+              {
+                "id": "31034",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30155",
+                "quantity": 6
+              },
+              {
+                "id": "31104",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_mcnist_2",
+        "iconId": null,
+        "skillName": "协防术式",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31094",
+                "quantity": 4
+              },
+              {
+                "id": "30093",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31114",
+                "quantity": 4
+              },
+              {
+                "id": "31064",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30145",
+                "quantity": 6
+              },
+              {
+                "id": "31074",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_mcnist_3",
+        "iconId": null,
+        "skillName": "工程学十字星",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "30014",
+                "quantity": 4
+              },
+              {
+                "id": "31023",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 3 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31024",
+                "quantity": 4
+              },
+              {
+                "id": "30044",
+                "quantity": 7
+              }
+            ],
+            "name": "Skill 3 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30165",
+                "quantity": 6
+              },
+              {
+                "id": "31114",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 3 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "机械师特勤证章",
+        "moduleId": "uniequip_002_mcnist",
+        "typeName": "SO-A",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [],
+            "name": "Module SO-A Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [],
+            "name": "Module SO-A Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [],
+            "name": "Module SO-A Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "再部署时间-4秒",
+      "防御力+28",
+      "第二天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          },
+          {
+            "id": "30021",
+            "quantity": 5
+          },
+          {
+            "id": "30051",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30032",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          },
+          {
+            "id": "30022",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30103",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 8
+          },
+          {
+            "id": "31043",
+            "quantity": 5
+          },
+          {
+            "id": "30083",
+            "quantity": 3
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 30000
+          },
+          {
+            "id": "3231",
+            "quantity": 5
+          },
+          {
+            "id": "30062",
+            "quantity": 6
+          },
+          {
+            "id": "30022",
+            "quantity": 4
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 180000
+          },
+          {
+            "id": "3233",
+            "quantity": 4
+          },
+          {
+            "id": "30115",
+            "quantity": 4
+          },
+          {
+            "id": "31054",
+            "quantity": 8
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
   "char_2026_yu": {
     "id": "char_2026_yu",
     "name": "Yu",
@@ -143648,7 +147305,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "人间百味",
+        "moduleName": "Tastes of Life",
         "moduleId": "uniequip_002_yu",
         "typeName": "PRP-X",
         "stages": [
@@ -143718,7 +147375,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -143870,6 +147527,448 @@
           {
             "id": "31024",
             "quantity": 5
+          }
+        ],
+        "name": "Elite 2",
+        "category": 0
+      }
+    ]
+  },
+  "char_4235_thumpy": {
+    "id": "char_4235_thumpy",
+    "name": "Thumpy",
+    "cnName": "珊比",
+    "rarity": 6,
+    "class": "Defender",
+    "branch": {
+      "id": "primprotector",
+      "name": "Primal Protector"
+    },
+    "isCnOnly": true,
+    "factions": [
+      "rim"
+    ],
+    "pools": [
+      "Standard"
+    ],
+    "skillData": [
+      {
+        "skillId": "skchr_thumpy_1",
+        "iconId": null,
+        "skillName": "“还不走？”",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31034",
+                "quantity": 4
+              },
+              {
+                "id": "30033",
+                "quantity": 4
+              }
+            ],
+            "name": "Skill 1 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "30054",
+                "quantity": 4
+              },
+              {
+                "id": "31104",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 1 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30115",
+                "quantity": 6
+              },
+              {
+                "id": "31024",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 1 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_thumpy_2",
+        "iconId": null,
+        "skillName": "“慢慢走~”",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "31064",
+                "quantity": 4
+              },
+              {
+                "id": "31063",
+                "quantity": 6
+              }
+            ],
+            "name": "Skill 2 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31084",
+                "quantity": 4
+              },
+              {
+                "id": "31074",
+                "quantity": 8
+              }
+            ],
+            "name": "Skill 2 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30155",
+                "quantity": 6
+              },
+              {
+                "id": "30054",
+                "quantity": 2
+              }
+            ],
+            "name": "Skill 2 Mastery 3",
+            "category": 1
+          }
+        ]
+      },
+      {
+        "skillId": "skchr_thumpy_3",
+        "iconId": null,
+        "skillName": "“不准走！”",
+        "masteries": [
+          {
+            "masteryLevel": 1,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 8
+              },
+              {
+                "id": "30044",
+                "quantity": 4
+              },
+              {
+                "id": "30103",
+                "quantity": 3
+              }
+            ],
+            "name": "Skill 3 Mastery 1",
+            "category": 1
+          },
+          {
+            "masteryLevel": 2,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 12
+              },
+              {
+                "id": "31044",
+                "quantity": 4
+              },
+              {
+                "id": "31094",
+                "quantity": 9
+              }
+            ],
+            "name": "Skill 3 Mastery 2",
+            "category": 1
+          },
+          {
+            "masteryLevel": 3,
+            "ingredients": [
+              {
+                "id": "3303",
+                "quantity": 15
+              },
+              {
+                "id": "30145",
+                "quantity": 6
+              },
+              {
+                "id": "31084",
+                "quantity": 1
+              }
+            ],
+            "name": "Skill 3 Mastery 3",
+            "category": 1
+          }
+        ]
+      }
+    ],
+    "moduleData": [
+      {
+        "moduleName": "出发的勇气",
+        "moduleId": "uniequip_002_thumpy",
+        "typeName": "PRP-X",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30165",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module PRP-X Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30115",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module PRP-X Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30155",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module PRP-X Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
+      }
+    ],
+    "potentials": [
+      "部署费用-1",
+      "第一天赋效果增强",
+      "生命上限+270",
+      "第二天赋效果增强",
+      "部署费用-1"
+    ],
+    "skillLevels": [
+      {
+        "skillLevel": 2,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 2",
+        "category": 2
+      },
+      {
+        "skillLevel": 3,
+        "ingredients": [
+          {
+            "id": "3301",
+            "quantity": 5
+          },
+          {
+            "id": "30031",
+            "quantity": 6
+          },
+          {
+            "id": "30041",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 3",
+        "category": 2
+      },
+      {
+        "skillLevel": 4,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30042",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 4",
+        "category": 2
+      },
+      {
+        "skillLevel": 5,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "30052",
+            "quantity": 4
+          },
+          {
+            "id": "30012",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 5",
+        "category": 2
+      },
+      {
+        "skillLevel": 6,
+        "ingredients": [
+          {
+            "id": "3302",
+            "quantity": 8
+          },
+          {
+            "id": "31043",
+            "quantity": 5
+          }
+        ],
+        "name": "Skill Level 6",
+        "category": 2
+      },
+      {
+        "skillLevel": 7,
+        "ingredients": [
+          {
+            "id": "3303",
+            "quantity": 8
+          },
+          {
+            "id": "30023",
+            "quantity": 5
+          },
+          {
+            "id": "31073",
+            "quantity": 4
+          }
+        ],
+        "name": "Skill Level 7",
+        "category": 2
+      }
+    ],
+    "eliteLevels": [
+      {
+        "eliteLevel": 1,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 30000
+          },
+          {
+            "id": "3231",
+            "quantity": 5
+          },
+          {
+            "id": "30012",
+            "quantity": 12
+          },
+          {
+            "id": "30022",
+            "quantity": 5
+          }
+        ],
+        "name": "Elite 1",
+        "category": 0
+      },
+      {
+        "eliteLevel": 2,
+        "ingredients": [
+          {
+            "id": "4001",
+            "quantity": 180000
+          },
+          {
+            "id": "3233",
+            "quantity": 4
+          },
+          {
+            "id": "30155",
+            "quantity": 4
+          },
+          {
+            "id": "31074",
+            "quantity": 2
           }
         ],
         "name": "Elite 2",
@@ -145363,7 +149462,7 @@
       "id": "fighter",
       "name": "Fighter"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "siracusa"
     ],
@@ -145374,7 +149473,7 @@
       {
         "skillId": "skchr_demetr_1",
         "iconId": null,
-        "skillName": "家主的余裕",
+        "skillName": "A Don's Plenty",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -145438,7 +149537,7 @@
       {
         "skillId": "skchr_demetr_2",
         "iconId": null,
-        "skillName": "军师的手段",
+        "skillName": "An Advisor's Tricks",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -145502,7 +149601,7 @@
       {
         "skillId": "skchr_demetr_3",
         "iconId": null,
-        "skillName": "清算",
+        "skillName": "Riscossione",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -145566,7 +149665,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "实用的工具",
+        "moduleName": "The Instrument",
         "moduleId": "uniequip_002_demetr",
         "typeName": "FGT-Y",
         "stages": [
@@ -145636,15 +149735,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "再部署时间-4秒",
-      "攻击力+24",
-      "第一天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Redeployment Time -4 sec",
+      "ATK +24",
+      "Improves First Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -147041,6 +151140,79 @@
           }
         ],
         "isCnOnly": false
+      },
+      {
+        "moduleName": "欲雪时",
+        "moduleId": "uniequip_003_qiubai",
+        "typeName": "LOR-Y",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "30155",
+                "quantity": 2
+              },
+              {
+                "id": "4001",
+                "quantity": 80000
+              }
+            ],
+            "name": "Module LOR-Y Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_1",
+                "quantity": 60
+              },
+              {
+                "id": "30145",
+                "quantity": 3
+              },
+              {
+                "id": "4001",
+                "quantity": 100000
+              }
+            ],
+            "name": "Module LOR-Y Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 4
+              },
+              {
+                "id": "mod_update_token_2",
+                "quantity": 20
+              },
+              {
+                "id": "30165",
+                "quantity": 4
+              },
+              {
+                "id": "4001",
+                "quantity": 120000
+              }
+            ],
+            "name": "Module LOR-Y Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
       }
     ],
     "potentials": [
@@ -147927,7 +152099,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "笔迹",
+        "moduleName": "The Handwriting",
         "moduleId": "uniequip_003_hodrer",
         "typeName": "CRU-Y",
         "stages": [
@@ -147997,7 +152169,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -150403,7 +154575,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "艾丽妮特限证章",
+        "moduleName": "Irene's Specialized Badge",
         "moduleId": "uniequip_004_irene",
         "typeName": "ISW-A",
         "stages": [
@@ -150441,7 +154613,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -152002,6 +156174,47 @@
           }
         ],
         "isCnOnly": false
+      },
+      {
+        "moduleName": "百炼嘉维尔特限证章",
+        "moduleId": "uniequip_004_gvial2",
+        "typeName": "RA-A",
+        "stages": [
+          {
+            "moduleLevel": 1,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module RA-A Stage 1",
+            "category": 3
+          },
+          {
+            "moduleLevel": 2,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module RA-A Stage 2",
+            "category": 3
+          },
+          {
+            "moduleLevel": 3,
+            "ingredients": [
+              {
+                "id": "mod_unlock_token",
+                "quantity": 1
+              }
+            ],
+            "name": "Module RA-A Stage 3",
+            "category": 3
+          }
+        ],
+        "isCnOnly": true
       }
     ],
     "potentials": [
@@ -152966,7 +157179,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "“最后一行”",
+        "moduleName": "'Final Line'",
         "moduleId": "uniequip_003_vvana",
         "typeName": "AFT-Y",
         "stages": [
@@ -153036,7 +157249,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -153723,12 +157936,9 @@
       "id": "artsfghter",
       "name": "Arts Fighter"
     },
-    "isCnOnly": true,
+    "isCnOnly": false,
     "factions": [
       "yan"
-    ],
-    "factionsHidden": [
-      "rhodes"
     ],
     "pools": [
       "Standard"
@@ -153737,7 +157947,7 @@
       {
         "skillId": "skchr_chen3_1",
         "iconId": null,
-        "skillName": "赤霄·奔夜",
+        "skillName": "Chi Xiao - Fleeting Night",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -153801,7 +158011,7 @@
       {
         "skillId": "skchr_chen3_2",
         "iconId": null,
-        "skillName": "赤霄·绝影-驰",
+        "skillName": "Chi Xiao - Shadowless Speed",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -153865,7 +158075,7 @@
       {
         "skillId": "skchr_chen3_3",
         "iconId": null,
-        "skillName": "赤霄·天喟",
+        "skillName": "Chi Xiao - Heaven's Plaint",
         "masteries": [
           {
             "masteryLevel": 1,
@@ -153929,7 +158139,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "记忆残页",
+        "moduleName": "Remnant Pages of Memory",
         "moduleId": "uniequip_002_chen3",
         "typeName": "AFT-X",
         "stages": [
@@ -153999,15 +158209,15 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
-      "部署费用-1",
-      "第二天赋效果增强",
-      "攻击力+28",
-      "第一天赋效果增强",
-      "部署费用-1"
+      "DP Cost -1",
+      "Improves Second Talent",
+      "ATK +28",
+      "Improves First Talent",
+      "DP Cost -1"
     ],
     "skillLevels": [
       {
@@ -157540,7 +161750,7 @@
         "isCnOnly": false
       },
       {
-        "moduleName": "玫瑰色故事集",
+        "moduleName": "A Collection of Rosy Tales",
         "moduleId": "uniequip_003_etlchi",
         "typeName": "REA-Y",
         "stages": [
@@ -157610,7 +161820,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -158802,7 +163012,7 @@
     ],
     "moduleData": [
       {
-        "moduleName": "“降落伞”",
+        "moduleName": "'Parachute'",
         "moduleId": "uniequip_002_cairn",
         "typeName": "PRP-X",
         "stages": [
@@ -158872,7 +163082,7 @@
             "category": 3
           }
         ],
-        "isCnOnly": true
+        "isCnOnly": false
       }
     ],
     "potentials": [
@@ -161690,7 +165900,8 @@
       "rhodes"
     ],
     "factionsHidden": [
-      "rim"
+      "rim",
+      "babel"
     ],
     "pools": [
       "Free"
@@ -162063,7 +166274,8 @@
       "rhodes"
     ],
     "factionsHidden": [
-      "rim"
+      "rim",
+      "babel"
     ],
     "pools": [
       "Free"
