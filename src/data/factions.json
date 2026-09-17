@@ -301,7 +301,7 @@
     "sortId": 44
   },
   "student": {
-    "powerName": "Ursus Student Self-Governing Group",
+    "powerName": "Ursus Student Self-government Group",
     "powerCode": "U.S.S.G",
     "powerLevel": 2,
     "isRaw": false,
@@ -320,5 +320,12 @@
     "powerLevel": 2,
     "isRaw": true,
     "sortId": 47
+  },
+  "sees": {
+    "powerName": "S.E.E.S.",
+    "powerCode": "S.E.E.S.",
+    "powerLevel": 2,
+    "isRaw": true,
+    "sortId": 48
   }
 }
