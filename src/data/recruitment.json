@@ -423,6 +423,32 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -1056,6 +1082,18 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -1206,6 +1244,18 @@
           "Crowd-Control",
           "Melee",
           "Vanguard",
+          "Robot"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
           "Robot"
         ]
       }
@@ -1528,6 +1578,18 @@
           "DPS",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
           "Senior Operator"
         ]
       },
@@ -2427,6 +2489,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_211_adnach",
         "name": "Adnachiel",
         "rarity": 3,
@@ -2571,6 +2644,18 @@
           "Supporter",
           "Robot"
         ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
+        ]
       }
     ],
     "guarantees": []
@@ -2683,6 +2768,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_121_lava",
         "name": "Lava",
         "rarity": 3,
@@ -2720,6 +2816,18 @@
           "Starter",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -3642,6 +3750,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_237_gravel",
         "name": "Gravel",
         "rarity": 4,
@@ -4262,6 +4382,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_4188_confes",
         "name": "CONFESS-47",
         "rarity": 1,
@@ -4732,6 +4863,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_141_nights",
         "name": "Haze",
         "rarity": 4,
@@ -4957,6 +5100,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_211_adnach",
         "name": "Adnachiel",
         "rarity": 3,
@@ -5104,6 +5258,18 @@
           "Debuff",
           "Ranged",
           "Sniper"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -6119,6 +6285,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_127_estell",
         "name": "Estelle",
         "rarity": 4,
@@ -6634,6 +6812,32 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -6884,6 +7088,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -7076,6 +7293,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -7134,6 +7364,19 @@
         "rarity": 6,
         "tags": [
           "DPS",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -7328,6 +7571,19 @@
         "tags": [
           "DPS",
           "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
           "Melee",
           "Guard",
           "Top Operator",
@@ -7617,6 +7873,19 @@
           "AoE",
           "Support",
           "Crowd-Control",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -8102,6 +8371,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -8216,6 +8498,19 @@
           "DPS",
           "Melee",
           "Defender",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
           "Top Operator",
           "Senior Operator"
         ]
@@ -8550,6 +8845,19 @@
           "DPS",
           "Ranged",
           "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
           "Top Operator",
           "Senior Operator"
         ]
@@ -8965,6 +9273,18 @@
           "DPS",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
           "Senior Operator"
         ]
       }
@@ -9848,6 +10168,18 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -10575,6 +10907,18 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11261,6 +11605,18 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -11521,6 +11877,41 @@
           "Supporter",
           "Robot"
         ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
+  "Caster,Robot": {
+    "tags": [
+      "Caster",
+      "Robot"
+    ],
+    "operators": [
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
+        ]
       }
     ],
     "guarantees": [
@@ -11703,6 +12094,29 @@
           "Crowd-Control",
           "Melee",
           "Vanguard",
+          "Robot"
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
+  "Debuff,Robot": {
+    "tags": [
+      "Debuff",
+      "Robot"
+    ],
+    "operators": [
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
           "Robot"
         ]
       }
@@ -12343,6 +12757,18 @@
         "tags": [
           "Fast-Redeploy",
           "DPS",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
           "Melee",
           "Specialist",
           "Senior Operator"
@@ -12993,6 +13419,18 @@
           "DPS",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
           "Senior Operator"
         ]
       },
@@ -13793,6 +14231,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_127_estell",
         "name": "Estelle",
         "rarity": 4,
@@ -13959,6 +14409,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_121_lava",
         "name": "Lava",
         "rarity": 3,
@@ -13996,6 +14457,18 @@
           "Starter",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -14738,6 +15211,17 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
       }
     ],
     "guarantees": [
@@ -15007,6 +15491,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_211_adnach",
         "name": "Adnachiel",
         "rarity": 3,
@@ -15111,6 +15606,18 @@
           "Debuff",
           "Ranged",
           "Sniper"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -15702,6 +16209,17 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
       }
     ],
     "guarantees": [
@@ -15772,6 +16290,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_210_stward",
         "name": "Steward",
         "rarity": 3,
@@ -15799,6 +16328,18 @@
           "Debuff",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -17408,6 +17949,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_272_strong",
         "name": "Jaye",
         "rarity": 4,
@@ -17659,6 +18212,18 @@
       {
         "id": "char_215_mantic",
         "name": "Manticore",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
         "rarity": 5,
         "tags": [
           "DPS",
@@ -18509,6 +19074,17 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
       }
     ],
     "guarantees": [
@@ -19120,6 +19696,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_235_jesica",
         "name": "Jessica",
         "rarity": 4,
@@ -19685,6 +20273,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -19878,6 +20479,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -19937,6 +20551,19 @@
         "rarity": 6,
         "tags": [
           "DPS",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -20133,6 +20760,19 @@
         "tags": [
           "DPS",
           "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
           "Melee",
           "Guard",
           "Top Operator",
@@ -20428,6 +21068,19 @@
           "AoE",
           "Support",
           "Crowd-Control",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -20916,6 +21569,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -21032,6 +21698,19 @@
           "DPS",
           "Melee",
           "Defender",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
           "Top Operator",
           "Senior Operator"
         ]
@@ -21376,6 +22055,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -21659,6 +22351,19 @@
         "tags": [
           "DPS",
           "Survival",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
           "Melee",
           "Guard",
           "Top Operator",
@@ -22083,6 +22788,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -22333,6 +23051,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -22484,6 +23215,19 @@
         "rarity": 6,
         "tags": [
           "DPS",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -22705,6 +23449,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -22904,6 +23661,31 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  "Defense,Ranged,Top Operator": {
+    "tags": [
+      "Defense",
+      "Ranged",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -23157,6 +23939,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -23253,6 +24048,31 @@
         "tags": [
           "AoE",
           "Debuff",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
+  "Caster,Defense,Top Operator": {
+    "tags": [
+      "Caster",
+      "Defense",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
           "Ranged",
           "Caster",
           "Top Operator",
@@ -23653,6 +24473,19 @@
           "Top Operator",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -23719,6 +24552,19 @@
       {
         "id": "char_172_svrash",
         "name": "SilverAsh",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
         "rarity": 6,
         "tags": [
           "DPS",
@@ -24441,6 +25287,31 @@
       6
     ]
   },
+  "AoE,Defense,Top Operator": {
+    "tags": [
+      "AoE",
+      "Defense",
+      "Top Operator"
+    ],
+    "operators": [
+      {
+        "id": "char_426_billro",
+        "name": "Carnelian",
+        "rarity": 6,
+        "tags": [
+          "AoE",
+          "Defense",
+          "Ranged",
+          "Caster",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      }
+    ],
+    "guarantees": [
+      6
+    ]
+  },
   "AoE,Support,Top Operator": {
     "tags": [
       "AoE",
@@ -24942,6 +25813,19 @@
           "DPS",
           "Ranged",
           "Supporter",
+          "Top Operator",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_485_pallas",
+        "name": "Pallas",
+        "rarity": 6,
+        "tags": [
+          "DPS",
+          "Support",
+          "Melee",
+          "Guard",
           "Top Operator",
           "Senior Operator"
         ]
@@ -25548,6 +26432,18 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -25966,6 +26862,18 @@
           "DPS",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
           "Senior Operator"
         ]
       }
@@ -26388,6 +27296,18 @@
           "DPS",
           "Melee",
           "Guard",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
           "Senior Operator"
         ]
       }
@@ -28423,6 +29343,18 @@
           "Specialist",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -28583,6 +29515,18 @@
       {
         "id": "char_215_mantic",
         "name": "Manticore",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
         "rarity": 5,
         "tags": [
           "DPS",
@@ -29577,6 +30521,18 @@
           "Guard",
           "Senior Operator"
         ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
       }
     ],
     "guarantees": [
@@ -30083,6 +31039,30 @@
       1
     ]
   },
+  "Caster,Ranged,Robot": {
+    "tags": [
+      "Caster",
+      "Ranged",
+      "Robot"
+    ],
+    "operators": [
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
   "Medic,Ranged,Robot": {
     "tags": [
       "Medic",
@@ -30155,6 +31135,30 @@
       1
     ]
   },
+  "Debuff,Ranged,Robot": {
+    "tags": [
+      "Debuff",
+      "Ranged",
+      "Robot"
+    ],
+    "operators": [
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
   "Healing,Ranged,Robot": {
     "tags": [
       "Healing",
@@ -30219,6 +31223,30 @@
           "Elemental",
           "Ranged",
           "Supporter",
+          "Robot"
+        ]
+      }
+    ],
+    "guarantees": [
+      1
+    ]
+  },
+  "Caster,Debuff,Robot": {
+    "tags": [
+      "Caster",
+      "Debuff",
+      "Robot"
+    ],
+    "operators": [
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
           "Robot"
         ]
       }
@@ -31281,6 +32309,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_272_strong",
         "name": "Jaye",
         "rarity": 4,
@@ -31539,6 +32579,18 @@
       {
         "id": "char_215_mantic",
         "name": "Manticore",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
         "rarity": 5,
         "tags": [
           "DPS",
@@ -32374,6 +33426,18 @@
         ]
       },
       {
+        "id": "char_478_kirara",
+        "name": "Kirara",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
         "id": "char_289_gyuki",
         "name": "Matoimaru",
         "rarity": 4,
@@ -32667,6 +33731,17 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
       }
     ],
     "guarantees": [
@@ -32738,6 +33813,17 @@
         ]
       },
       {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
         "id": "char_210_stward",
         "name": "Steward",
         "rarity": 3,
@@ -32766,6 +33852,18 @@
           "Debuff",
           "Ranged",
           "Caster"
+        ]
+      },
+      {
+        "id": "char_4227_gallus",
+        "name": "GALLUS²",
+        "rarity": 1,
+        "tags": [
+          "Robot",
+          "Debuff",
+          "Ranged",
+          "Caster",
+          "Robot"
         ]
       }
     ],
@@ -33998,6 +35096,17 @@
           "Ranged",
           "Caster"
         ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
       }
     ],
     "guarantees": [
@@ -34440,6 +35549,17 @@
       {
         "id": "char_328_cammou",
         "name": "Click",
+        "rarity": 4,
+        "tags": [
+          "DPS",
+          "Crowd-Control",
+          "Ranged",
+          "Caster"
+        ]
+      },
+      {
+        "id": "char_469_indigo",
+        "name": "Indigo",
         "rarity": 4,
         "tags": [
           "DPS",
@@ -35332,6 +36452,18 @@
       {
         "id": "char_215_mantic",
         "name": "Manticore",
+        "rarity": 5,
+        "tags": [
+          "DPS",
+          "Survival",
+          "Melee",
+          "Specialist",
+          "Senior Operator"
+        ]
+      },
+      {
+        "id": "char_478_kirara",
+        "name": "Kirara",
         "rarity": 5,
         "tags": [
           "DPS",
