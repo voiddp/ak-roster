@@ -1,0 +1,9 @@
+{
+  "name": "ak-roster-dev",
+  "image": "node:24-alpine",
+  "onCreateCommand": "apk update && apk add --no-cache git && git config --global --add safe.directory '*' && git config --global core.editor 'code --wait'",
+  "updateContentCommand": "chmod 777 /tmp",
+  "forwardPorts": [3000],
+  "postCreateCommand": "yarn install && git submodule update --init --recursive --force --remote",
+  "postStartCommand": "git submodule sync --recursive && git submodule update --init --recursive --force --remote && git fetch --all"
+}
